@@ -29,7 +29,7 @@ DB_CONFIG = {
     'host': 'localhost',
     'database': 'fleetlogix',
     'user': 'postgres',
-    'password': '5454',  # Cambiar por tu contraseña
+    'password': '##',  # Cambiar por tu contraseña
     'port': 5432
 }
 
