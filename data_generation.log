@@ -1,0 +1,132 @@
+2026-02-12 17:19:40,081 - INFO -  Conexión exitosa a PostgreSQL
+2026-02-12 17:19:40,082 - INFO - Generando 200 vehículos...
+2026-02-12 17:19:40,100 - ERROR -  Error durante la generación: no existe la columna «v_type» en la relación «vehicles»
+LINE 2:             INSERT INTO vehicles (license_plate, v_type,
+                                                         ^
+
+2026-02-12 17:19:40,100 - INFO - 
+ Conexión cerrada
+2026-02-12 17:21:45,471 - INFO -  Conexión exitosa a PostgreSQL
+2026-02-12 17:21:45,471 - INFO - Generando 200 vehículos...
+2026-02-12 17:21:45,494 - ERROR -  Error durante la generación: no existe la columna «v_type» en la relación «vehicles»
+LINE 2:             INSERT INTO vehicles (license_plate, v_type,
+                                                         ^
+
+2026-02-12 17:21:45,495 - INFO - 
+ Conexión cerrada
+2026-02-12 17:23:08,256 - INFO -  Conexión exitosa a PostgreSQL
+2026-02-12 17:23:08,256 - INFO - Generando 200 vehículos...
+2026-02-12 17:23:08,270 - ERROR -  Error durante la generación: no existe la columna «capacity» en la relación «vehicles»
+LINE 3:                                  capacity, fuel_type, fuel,
+                                         ^
+
+2026-02-12 17:23:08,271 - INFO - 
+ Conexión cerrada
+2026-02-12 17:23:53,636 - INFO -  Conexión exitosa a PostgreSQL
+2026-02-12 17:23:53,636 - INFO - Generando 200 vehículos...
+2026-02-12 17:23:53,662 - INFO -  200 vehículos insertados
+2026-02-12 17:23:53,663 - INFO - Generando 400 conductores...
+2026-02-12 17:23:53,783 - INFO -  400 conductores insertados
+2026-02-12 17:23:53,783 - INFO - Generando 50 rutas...
+2026-02-12 17:23:53,791 - INFO -  50 rutas insertadas
+2026-02-12 17:23:53,791 - INFO - Generando 100000 viajes...
+2026-02-12 17:23:59,313 - INFO -   Progreso: 0/100000 trips insertados
+2026-02-12 17:24:00,548 - INFO -   Progreso: 10000/100000 trips insertados
+2026-02-12 17:24:01,799 - INFO -   Progreso: 20000/100000 trips insertados
+2026-02-12 17:24:03,191 - INFO -   Progreso: 30000/100000 trips insertados
+2026-02-12 17:24:04,841 - INFO -   Progreso: 40000/100000 trips insertados
+2026-02-12 17:24:06,365 - INFO -   Progreso: 50000/100000 trips insertados
+2026-02-12 17:24:07,891 - INFO -   Progreso: 60000/100000 trips insertados
+2026-02-12 17:24:09,365 - INFO -   Progreso: 70000/100000 trips insertados
+2026-02-12 17:24:10,830 - INFO -   Progreso: 80000/100000 trips insertados
+2026-02-12 17:24:12,260 - INFO -   Progreso: 90000/100000 trips insertados
+2026-02-12 17:24:13,579 - INFO -  100000 viajes insertados
+2026-02-12 17:24:13,590 - INFO - Generando 400000 entregas...
+2026-02-12 17:24:13,592 - ERROR -  Error durante la generación: no existe la columna r.city
+LINE 7:                 r.city
+                        ^
+
+2026-02-12 17:24:13,592 - INFO - 
+ Conexión cerrada
+2026-02-12 17:28:41,565 - INFO -  Conexión exitosa a PostgreSQL
+2026-02-12 17:28:41,565 - INFO - Generando 200 vehículos...
+2026-02-12 17:28:41,593 - INFO -  200 vehículos insertados
+2026-02-12 17:28:41,593 - INFO - Generando 400 conductores...
+2026-02-12 17:28:41,706 - INFO -  400 conductores insertados
+2026-02-12 17:28:41,706 - INFO - Generando 50 rutas...
+2026-02-12 17:28:41,712 - INFO -  50 rutas insertadas
+2026-02-12 17:28:41,712 - INFO - Generando 100000 viajes...
+2026-02-12 17:28:46,761 - INFO -   Progreso: 0/100000 trips insertados
+2026-02-12 17:28:47,967 - INFO -   Progreso: 10000/100000 trips insertados
+2026-02-12 17:28:49,170 - INFO -   Progreso: 20000/100000 trips insertados
+2026-02-12 17:28:50,368 - INFO -   Progreso: 30000/100000 trips insertados
+2026-02-12 17:28:51,569 - INFO -   Progreso: 40000/100000 trips insertados
+2026-02-12 17:28:52,790 - INFO -   Progreso: 50000/100000 trips insertados
+2026-02-12 17:28:53,997 - INFO -   Progreso: 60000/100000 trips insertados
+2026-02-12 17:28:55,196 - INFO -   Progreso: 70000/100000 trips insertados
+2026-02-12 17:28:56,412 - INFO -   Progreso: 80000/100000 trips insertados
+2026-02-12 17:28:57,622 - INFO -   Progreso: 90000/100000 trips insertados
+2026-02-12 17:28:58,720 - INFO -  100000 viajes insertados
+2026-02-12 17:28:58,733 - INFO - Generando 400000 entregas...
+2026-02-12 17:30:22,362 - ERROR -  Error durante la generación: no existe el esquema «np»
+LINE 5: ...olina Castro Cuesta', 'Calle 169Z # 40-23, Cali', np.float64...
+                                                             ^
+
+2026-02-12 17:30:22,470 - INFO - 
+ Conexión cerrada
+2026-02-12 17:34:07,572 - INFO -  Conexión exitosa a PostgreSQL
+2026-02-12 17:34:07,573 - INFO - Generando 200 vehículos...
+2026-02-12 17:34:07,600 - INFO -  200 vehículos insertados
+2026-02-12 17:34:07,600 - INFO - Generando 400 conductores...
+2026-02-12 17:34:07,710 - INFO -  400 conductores insertados
+2026-02-12 17:34:07,711 - INFO - Generando 50 rutas...
+2026-02-12 17:34:07,716 - INFO -  50 rutas insertadas
+2026-02-12 17:34:07,716 - INFO - Generando 100000 viajes...
+2026-02-12 17:34:12,764 - INFO -   Progreso: 0/100000 trips insertados
+2026-02-12 17:34:13,967 - INFO -   Progreso: 10000/100000 trips insertados
+2026-02-12 17:34:15,201 - INFO -   Progreso: 20000/100000 trips insertados
+2026-02-12 17:34:16,395 - INFO -   Progreso: 30000/100000 trips insertados
+2026-02-12 17:34:17,624 - INFO -   Progreso: 40000/100000 trips insertados
+2026-02-12 17:34:18,807 - INFO -   Progreso: 50000/100000 trips insertados
+2026-02-12 17:34:20,021 - INFO -   Progreso: 60000/100000 trips insertados
+2026-02-12 17:34:21,244 - INFO -   Progreso: 70000/100000 trips insertados
+2026-02-12 17:34:22,475 - INFO -   Progreso: 80000/100000 trips insertados
+2026-02-12 17:34:23,699 - INFO -   Progreso: 90000/100000 trips insertados
+2026-02-12 17:34:24,833 - INFO -  100000 viajes insertados
+2026-02-12 17:34:24,844 - INFO - Generando 400000 entregas...
+2026-02-12 17:35:46,023 - INFO -   Progreso: 0/400001 deliveries insertados
+2026-02-12 17:35:52,117 - INFO -   Progreso: 50000/400001 deliveries insertados
+2026-02-12 17:35:58,167 - INFO -   Progreso: 100000/400001 deliveries insertados
+2026-02-12 17:36:04,815 - INFO -   Progreso: 150000/400001 deliveries insertados
+2026-02-12 17:36:11,224 - INFO -   Progreso: 200000/400001 deliveries insertados
+2026-02-12 17:36:17,229 - INFO -   Progreso: 250000/400001 deliveries insertados
+2026-02-12 17:36:23,127 - INFO -   Progreso: 300000/400001 deliveries insertados
+2026-02-12 17:36:28,935 - INFO -   Progreso: 350000/400001 deliveries insertados
+2026-02-12 17:36:34,752 - INFO -   Progreso: 400000/400001 deliveries insertados
+2026-02-12 17:36:34,752 - INFO -  400001 entregas insertadas
+2026-02-12 17:36:34,857 - INFO - Generando 5000 registros de mantenimiento...
+2026-02-12 17:36:35,964 - INFO -  4920 mantenimientos insertados
+2026-02-12 17:36:35,965 - INFO - 
+ RESUMEN DE GENERACIÓN DE DATOS
+2026-02-12 17:36:35,965 - INFO - ==================================================
+2026-02-12 17:36:35,966 - INFO -   vehicles: 200 registros
+2026-02-12 17:36:35,969 - INFO -   drivers: 400 registros
+2026-02-12 17:36:35,969 - INFO -   routes: 48 registros
+2026-02-12 17:36:35,975 - INFO -   trips: 100,000 registros
+2026-02-12 17:36:36,095 - INFO -   deliveries: 400,001 registros
+2026-02-12 17:36:36,097 - INFO -   maintenance: 4,920 registros
+2026-02-12 17:36:36,097 - INFO - 
+  TOTAL: 505,569 registros
+2026-02-12 17:36:36,260 - INFO - 
+  Entregas por viaje: AVG=4.0, MIN=2, MAX=6
+2026-02-12 17:36:36,260 - INFO - 
+ VALIDANDO CALIDAD DE DATOS...
+2026-02-12 17:36:36,278 - INFO -    Integridad referencial - Trips sin vehículo válido: OK
+2026-02-12 17:36:36,369 - INFO -    Integridad referencial - Deliveries sin trip válido: OK
+2026-02-12 17:36:36,380 - INFO -    Consistencia temporal - Trips con arrival < departure: OK
+2026-02-12 17:36:36,429 - INFO -    Consistencia de peso - Trips excediendo capacidad: OK
+2026-02-12 17:36:36,430 - INFO -    Entregas sin tracking number: OK
+2026-02-12 17:36:36,431 - INFO - 
+ Resumen guardado en generation_summary.json
+2026-02-12 17:36:36,432 - INFO - 
+ Conexión cerrada
