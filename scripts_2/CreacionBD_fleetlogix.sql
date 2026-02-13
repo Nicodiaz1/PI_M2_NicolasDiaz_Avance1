@@ -130,38 +130,38 @@ FROM pg_indexes
 WHERE schemaname = 'public'
 ORDER BY tablename, indexname;
 
--- ### Consulta para documentar relaciones y constraints:
--- Listar todas las constraints y relaciones en la base de datos actual
-SELECT 
-    tc.constraint_name AS constraint_name,
-    tc.constraint_type AS constraint_type,
-    tc.table_schema AS table_schema,
-    tc.table_name AS table_name,
-    kcu.column_name AS column_name,
-    CASE 
-        WHEN tc.constraint_type = 'FOREIGN KEY' THEN ccu.table_schema
-        ELSE NULL
-    END AS referenced_table_schema,
-    CASE 
-        WHEN tc.constraint_type = 'FOREIGN KEY' THEN ccu.table_name
-        ELSE NULL
-    END AS referenced_table_name,
-    CASE 
-        WHEN tc.constraint_type = 'FOREIGN KEY' THEN ccu.column_name
-        ELSE NULL
-    END AS referenced_column_name
-FROM 
-    information_schema.table_constraints AS tc
-LEFT JOIN 
-    information_schema.key_column_usage AS kcu
-    ON tc.constraint_name = kcu.constraint_name
-    AND tc.table_schema = kcu.table_schema
-LEFT JOIN 
-    information_schema.constraint_column_usage AS ccu
-    ON tc.constraint_name = ccu.constraint_name
-    AND tc.table_schema = ccu.table_schema
-WHERE 
-    tc.table_schema = 'public'
-ORDER BY 
-    tc.table_name, tc.constraint_name;
+--Asegurar consistencia temporal (arrival > departure)
+SELECT COUNT(*) AS invalid_trips
+FROM trips
+WHERE arrival_datetime IS NOT NULL
+  AND arrival_datetime < departure_datetime;
 
+-- Trips sin vehículo válido
+SELECT COUNT(*) 
+FROM trips t
+LEFT JOIN vehicles v ON t.vehicle_id = v.vehicle_id
+WHERE v.vehicle_id IS NULL;
+
+-- Trips sin conductor válido
+SELECT COUNT(*)
+FROM trips t
+LEFT JOIN drivers d ON t.driver_id = d.driver_id
+WHERE d.driver_id IS NULL;
+
+-- Trips sin ruta válida
+SELECT COUNT(*)
+FROM trips t
+LEFT JOIN routes r ON t.route_id = r.route_id
+WHERE r.route_id IS NULL;
+
+-- Deliveries sin trip válido
+SELECT COUNT(*)
+FROM deliveries d
+LEFT JOIN trips t ON d.trip_id = t.trip_id
+WHERE t.trip_id IS NULL;
+
+-- Maintenance sin vehículo válido
+SELECT COUNT(*)
+FROM maintenance m
+LEFT JOIN vehicles v ON m.vehicle_id = v.vehicle_id
+WHERE v.vehicle_id IS NULL;
