@@ -165,3 +165,7 @@ SELECT COUNT(*)
 FROM maintenance m
 LEFT JOIN vehicles v ON m.vehicle_id = v.vehicle_id
 WHERE v.vehicle_id IS NULL;
+
+
+
+----
